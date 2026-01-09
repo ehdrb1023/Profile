@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset = "utf-8">
+    <meta name= "viewport" content = "width=device-width, initial-scale=1" />
+    <title>자기소개 페이지 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class = "hero">
+        <div class = "hero-content">
+            <h1>안녕하세요</h1>
+            <h2>개발자가 되기 위해 공부하고 있는 신동규입니다.</h2>
+        </div>
+
+        <button id = "themeToggle" class="theme-toggle" type="button">Light</button>
+    </section>
+
+    <main class = "content">
+    <hr>
+
+    <h3>1. Profile </h3>
+    <ul class = "profile-list">
+        <li class = "profile-item">
+            <div class = "profile-label">이름 : 신동규</div>
+        </li>
+
+        <li class = "profile-item">
+            <div class = "profile-label">생년월일 : 2001년 10월 23일</div>
+        </li>
+
+        <li class = "profile-item">
+            <div class = "profile-label">이메일 : martin1023@naver.com</div>
+        </li>
+
+        <li class = "profile-item">
+            <div class = "profile-label">학력
+                <ul class = "education-list">
+                    <li class = "education-item">한양대학교 컴퓨터소프트웨어학부 (2025.03 ~ 현재)</li>
+                    <li class = "education-item">서울시립대학교 전자전기컴퓨터공학부 (2021.03 ~ 2025.02)</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class = "profile-item">
+            <div class = "profile-label">취미 : 스포츠 시청(축구, 농구, 야구), 추리소설 읽기, 게임</div>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Languages</h3>
+    <ul class = "lang-list">
+        <li class = "lang-item">
+            <span class = "lang-logo">
+                <img src = "../img/python.png" alt = "Python">
+            </span>
+            <div class = "lang-name">Python</div>
+        </li>
+
+        <li class = "lang-item">
+            <span class = "lang-logo">
+                <img src = "../img/c++.png" alt = "C++">
+            </span>
+            <div class = "lang-name">C / C++</div>
+        </li>
+
+        <li class = "lang-item">
+            <span class = "lang-logo">
+                <img src = "../img/java.png" alt = "Java">
+            </span>
+            <div class = "lang-name">Java</div>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>3. 프로젝트 경험</h3>
+    <ul class = "project-list">
+        <li class = "project-item"> 운영체제 - xv6 기반 thread clone/join 기능 구현</li>
+        <li class = "project-item"> DBMS - B+Tree 기반 간단한 데이터베이스 관리 시스템 구현</li>
+        <li class = "project-item"> 국민대학교 공모전 - 공행성 기반 수출량 예측 모델 개발</li>
+    </ul>
+</main>
+
+<footer class = "footer">
+    <a class = "github-link" href="https://github.com/ehdrb1023" target="_ blank" rel = "noopener noreferrer">
+        <span class="github-logo">
+            <img src="../img/github.png" alt="GitHub">
+        </span>
+        <span class="github-text">github.com/ehdrb1023</span>    
+    </a>
+</footer>
+
+<script>
+    const btn = document.getElementById('themeToggle');
+
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('theme-light');
+        btn.textContent = document.body.classList.contains('theme-light') ? 'Dark' : 'Light';
+    });
+</script>
+
+
+</body>
+</html>
